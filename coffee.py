@@ -1,8 +1,6 @@
 from order import Order
 
 class Coffee:
-    
-    all = []
 
     def __init__(self, name):
         if not isinstance(name, str):

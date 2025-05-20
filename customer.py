@@ -1,8 +1,6 @@
 from order import Order
 
 class Customer:
-    
-    all = []
 
     def __init__(self, name):
         self.name = name
