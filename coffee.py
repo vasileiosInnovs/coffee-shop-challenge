@@ -2,6 +2,8 @@ from order import Order
 
 class Coffee:
 
+    all = []
+
     def __init__(self, name):
         if not isinstance(name, str):
             raise ValueError("Name has to be a string!")
@@ -24,3 +26,9 @@ class Coffee:
         sum_price = sum(order.price for order in orders)
         total_orders = len(orders)
         return sum_price / total_orders
+
+    def orders(self):
+        return [order for order in Order.all if order.coffee == self]
+    
+    def customers(self):
+        return list({order.customer for order in self.orders()})
