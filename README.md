@@ -138,17 +138,3 @@ coffee-shop-challenge/
 * Understand **many-to-many relationships** in code
 * Learn how to manage **clean, validated object design**
 * Reinforce single-source-of-truth architecture using shared class lists
-
----
-
-## 🧪 Optional Enhancements
-
-Want to go further?
-
-* Add filtering methods like `Customer.orders()` or `Coffee.customers()`
-* Create CLI or GUI to place and view orders
-* Write unit tests using `unittest` or `pytest`
-
----
-
-Let me know if you'd like this turned into an actual codebase structure or GitHub repo format!
