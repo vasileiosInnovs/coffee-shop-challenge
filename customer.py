@@ -1,7 +1,7 @@
 from order import Order
 
 class Customer:
-    
+
     all = []
 
     def __init__(self, name):
@@ -25,6 +25,9 @@ class Customer:
 
     def orders(self):
         return [order for order in Order.all if order.customer == self]
+    
+    def coffees(self):
+        return list ({order.coffee for order in self.orders()})
 
     @classmethod
     def most_aficionado(cls, coffee):
